@@ -1,0 +1,25 @@
+@theme {
+  /* ===== Colors ===== */
+
+  --color-primary: #dc2626;
+  --color-primary-hover: #b91c1c;
+
+  --color-accent: #facc15;
+
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+
+  --color-border: #e2e8f0;
+
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+
+  /* ===== Radius ===== */
+
+  --radius-card: 1rem;
+
+  /* ===== Shadow ===== */
+
+  --shadow-card: 0 4px 10px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
