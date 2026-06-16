@@ -4,6 +4,7 @@ import { mockPokemons } from "../data/mockPokemons";
 function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <p>test</p>
       <PokemonGrid pokemons={mockPokemons} />
     </div>
   );
