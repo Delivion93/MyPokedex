@@ -10,10 +10,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
 
-      <Route path="/pokemon/:id" element={<PokemonDetails />} />
-
-      <Route path="/about" element={<About />} />
-
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

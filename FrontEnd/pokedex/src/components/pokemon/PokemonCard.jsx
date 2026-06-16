@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { typeColors } from "../../utils/typeColors";
-import { formatPokemonName } from "../../utils/formatPokemonName";
+import { formatPokemonName } from "../../utils/formatPokemonNames";
 
 function PokemonCard({ pokemon }) {
   return (
