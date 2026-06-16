@@ -1,3 +1,5 @@
+import pikachu from "../assets/Ohirok.png";
+
 export const mockPokemons = [
   {
     id: 1,
@@ -120,10 +122,9 @@ export const mockPokemons = [
   },
   {
     id: 74,
-    name: "geodude",
-    image:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png",
-    types: ["rock", "ground"],
+    name: "Ohirok",
+    image: pikachu,
+    types: ["rock", "fairy"],
   },
   {
     id: 81,
