@@ -14,14 +14,30 @@ function Home() {
 
   async function loadPokemons() {
     const limit = 20;
-
     const offset = (currentPage - 1) * limit;
 
     const data = await getPokemons(limit, offset);
 
-    setTotalPages(Math.ceil(data.count / limit));
+    const detailedPokemons = await Promise.all(
+      data.results.map(async (pokemon) => {
+        const response = await fetch(pokemon.url);
 
-    console.log(data);
+        const details = await response.json();
+
+        return {
+          id: details.id,
+          name: details.name,
+
+          image: details.sprites.other["official-artwork"].front_default,
+
+          types: details.types.map((type) => type.type.name),
+        };
+      }),
+    );
+
+    setPokemons(detailedPokemons);
+
+    setTotalPages(Math.ceil(data.count / limit));
   }
 
   useEffect(() => {
